@@ -1,0 +1,50 @@
+{
+  "name": "PaperOwnership",
+  "description": "An asset named PaperOwnership",
+  "plural": "PaperOwnership",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true,
+    "composer": {
+      "type": "asset",
+      "namespace": "org.example.commercialpaper",
+      "name": "PaperOwnership",
+      "fqn": "org.example.commercialpaper.PaperOwnership",
+      "abstract": false
+    }
+  },
+  "properties": {
+    "$class": {
+      "type": "string",
+      "default": "org.example.commercialpaper.PaperOwnership",
+      "required": false,
+      "description": "The class identifier for this type"
+    },
+    "ID": {
+      "type": "string",
+      "id": true,
+      "description": "The instance identifier for this type",
+      "required": true
+    },
+    "paper": {
+      "type": "any",
+      "description": "The identifier of an instance of paper",
+      "required": true
+    },
+    "owner": {
+      "type": "any",
+      "description": "The identifier of an instance of owner",
+      "required": true
+    },
+    "owningAccount": {
+      "type": "any",
+      "description": "The identifier of an instance of owningAccount",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

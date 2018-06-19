@@ -1,0 +1,24 @@
+export COMPOSER_CARD=admin@commercial-paper-network
+export COMPOSER_NAMESPACES=never
+export COMPOSER_AUTHENTICATION=true
+export COMPOSER_MULTIUSER=true
+export COMPOSER_PROVIDERS='{
+    "google": {
+        "provider": "google",
+        "module": "passport-google-oauth2",
+        "clientID": "579021202566-gqkp8tiekaplb14fo96tpm6rkr8ahua3.apps.googleusercontent.com",
+        "clientSecret": "OrFXUMX9yIgPtgkWFAj47Bza",
+        "authPath": "/auth/google",
+        "callbackURL": "/auth/google/callback",
+        "scope": "https://www.googleapis.com/auth/plus.login",
+        "successRedirect": "/",
+        "failureRedirect": "/"
+    }
+}'
+export COMPOSER_DATASOURCES='{
+    "db": {
+        "name": "db",
+        "connector": "mongodb",
+        "host": "mongo"
+    }
+}'

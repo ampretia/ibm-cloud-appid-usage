@@ -1,0 +1,55 @@
+{
+  "name": "Company",
+  "description": "A participant named Company",
+  "plural": "Company",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true,
+    "composer": {
+      "type": "participant",
+      "namespace": "org.example.commercialpaper",
+      "name": "Company",
+      "fqn": "org.example.commercialpaper.Company",
+      "abstract": false
+    }
+  },
+  "properties": {
+    "$class": {
+      "type": "string",
+      "default": "org.example.commercialpaper.Company",
+      "required": false,
+      "description": "The class identifier for this type"
+    },
+    "symbol": {
+      "type": "string",
+      "id": true,
+      "description": "The instance identifier for this type",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "publicdid": {
+      "type": "DID",
+      "required": false
+    },
+    "paperTradingAccounts": {
+      "type": [
+        "any"
+      ],
+      "description": "The identifier of an instance of paperTradingAccounts",
+      "required": true
+    },
+    "issuedPaperAccount": {
+      "type": "any",
+      "description": "The identifier of an instance of issuedPaperAccount",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

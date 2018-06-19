@@ -1,0 +1,80 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "System": {
+    "dataSource": "composer",
+    "public": true
+  },
+  "PingResponse": {
+    "dataSource": "composer",
+    "public": false
+  },
+  "Currency": {
+    "dataSource": "composer",
+    "public": true
+  },
+  "DID": {
+    "dataSource": "composer",
+    "public": true
+  },
+  "Company": {
+    "dataSource": "composer",
+    "public": true
+  },
+  "Account": {
+    "dataSource": "composer",
+    "public": true
+  },
+  "PaperOwnership": {
+    "dataSource": "composer",
+    "public": true
+  },
+  "PaperListing": {
+    "dataSource": "composer",
+    "public": true
+  },
+  "CommercialPaper": {
+    "dataSource": "composer",
+    "public": true
+  },
+  "Trader": {
+    "dataSource": "composer",
+    "public": true
+  },
+  "Market": {
+    "dataSource": "composer",
+    "public": true
+  },
+  "RedeemPaper": {
+    "dataSource": "composer",
+    "public": true
+  },
+  "PurchasePaper": {
+    "dataSource": "composer",
+    "public": true
+  },
+  "CreatePaper": {
+    "dataSource": "composer",
+    "public": true
+  },
+  "ListOnMarket": {
+    "dataSource": "composer",
+    "public": true
+  },
+  "AssignDid": {
+    "dataSource": "composer",
+    "public": true
+  }
+}

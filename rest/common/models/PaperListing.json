@@ -1,0 +1,44 @@
+{
+  "name": "PaperListing",
+  "description": "An asset named PaperListing",
+  "plural": "PaperListing",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true,
+    "composer": {
+      "type": "asset",
+      "namespace": "org.example.commercialpaper",
+      "name": "PaperListing",
+      "fqn": "org.example.commercialpaper.PaperListing",
+      "abstract": false
+    }
+  },
+  "properties": {
+    "$class": {
+      "type": "string",
+      "default": "org.example.commercialpaper.PaperListing",
+      "required": false,
+      "description": "The class identifier for this type"
+    },
+    "ID": {
+      "type": "string",
+      "id": true,
+      "description": "The instance identifier for this type",
+      "required": true
+    },
+    "paperOwnership": {
+      "type": "any",
+      "description": "The identifier of an instance of paperOwnership",
+      "required": true
+    },
+    "discount": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

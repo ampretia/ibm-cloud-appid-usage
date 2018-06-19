@@ -1,0 +1,69 @@
+{
+  "name": "CommercialPaper",
+  "description": "An asset named CommercialPaper",
+  "plural": "CommercialPaper",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true,
+    "composer": {
+      "type": "asset",
+      "namespace": "org.example.commercialpaper",
+      "name": "CommercialPaper",
+      "fqn": "org.example.commercialpaper.CommercialPaper",
+      "abstract": false
+    }
+  },
+  "properties": {
+    "$class": {
+      "type": "string",
+      "default": "org.example.commercialpaper.CommercialPaper",
+      "required": false,
+      "description": "The class identifier for this type"
+    },
+    "CUSIP": {
+      "type": "string",
+      "id": true,
+      "description": "The instance identifier for this type",
+      "required": true
+    },
+    "ticker": {
+      "type": "string",
+      "required": true
+    },
+    "currency": {
+      "type": "string",
+      "enum": [
+        "EURO",
+        "STERLING",
+        "USD",
+        "YEN",
+        "CHF",
+        "CAD"
+      ],
+      "default": "USD",
+      "required": true
+    },
+    "par": {
+      "type": "number",
+      "required": true
+    },
+    "maturity": {
+      "type": "number",
+      "required": true
+    },
+    "issuer": {
+      "type": "any",
+      "description": "The identifier of an instance of issuer",
+      "required": true
+    },
+    "issueDate": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

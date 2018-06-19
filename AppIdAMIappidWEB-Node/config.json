@@ -1,0 +1,7 @@
+{
+  "clientId": "be63353f-189f-4aac-8835-f16e8871c415",
+  "oauthServerUrl": "https://appid-oauth.eu-gb.bluemix.net/oauth/v3/bf6e32f7-a928-4d09-81ad-3237dfd6d2e3",
+  "profilesUrl": "https://appid-profiles.eu-gb.bluemix.net",
+  "secret": "YjFjZTkyYzYtYjkwMi00Y2MzLTk4ZWYtYWYxYWVkYjcyNDA4",
+  "tenantId": "bf6e32f7-a928-4d09-81ad-3237dfd6d2e3"
+}

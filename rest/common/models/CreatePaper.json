@@ -1,0 +1,75 @@
+{
+  "name": "CreatePaper",
+  "description": "A transaction named CreatePaper",
+  "plural": "CreatePaper",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true,
+    "composer": {
+      "type": "transaction",
+      "namespace": "org.example.commercialpaper",
+      "name": "CreatePaper",
+      "fqn": "org.example.commercialpaper.CreatePaper",
+      "abstract": false
+    }
+  },
+  "properties": {
+    "$class": {
+      "type": "string",
+      "default": "org.example.commercialpaper.CreatePaper",
+      "required": false,
+      "description": "The class identifier for this type"
+    },
+    "CUSIP": {
+      "type": "string",
+      "required": true
+    },
+    "ticker": {
+      "type": "string",
+      "required": true
+    },
+    "maturity": {
+      "type": "number",
+      "required": true
+    },
+    "workingCurrency": {
+      "type": "string",
+      "enum": [
+        "EURO",
+        "STERLING",
+        "USD",
+        "YEN",
+        "CHF",
+        "CAD"
+      ],
+      "default": "USD",
+      "required": true
+    },
+    "par": {
+      "type": "number",
+      "required": true
+    },
+    "numberToCreate": {
+      "type": "number",
+      "default": "1",
+      "required": true
+    },
+    "transactionId": {
+      "type": "string",
+      "id": true,
+      "description": "The instance identifier for this type",
+      "required": false,
+      "generated": true
+    },
+    "timestamp": {
+      "type": "date",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": [],
+  "forceId": true
+}

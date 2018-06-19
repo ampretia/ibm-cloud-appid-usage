@@ -1,0 +1,59 @@
+{
+  "name": "Trader",
+  "description": "A participant named Trader",
+  "plural": "Trader",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true,
+    "composer": {
+      "type": "participant",
+      "namespace": "org.example.commercialpaper",
+      "name": "Trader",
+      "fqn": "org.example.commercialpaper.Trader",
+      "abstract": false
+    }
+  },
+  "properties": {
+    "$class": {
+      "type": "string",
+      "default": "org.example.commercialpaper.Trader",
+      "required": false,
+      "description": "The class identifier for this type"
+    },
+    "participantId": {
+      "type": "string",
+      "id": true,
+      "description": "The instance identifier for this type",
+      "required": true
+    },
+    "firstName": {
+      "type": "string",
+      "required": true
+    },
+    "lastName": {
+      "type": "string",
+      "required": true
+    },
+    "worksFor": {
+      "type": "any",
+      "description": "The identifier of an instance of worksFor",
+      "required": true
+    },
+    "manages": {
+      "type": [
+        "any"
+      ],
+      "description": "The identifier of an instance of manages",
+      "required": true
+    },
+    "traderdid": {
+      "type": "DID",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

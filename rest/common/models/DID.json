@@ -1,0 +1,42 @@
+{
+  "name": "DID",
+  "description": "A concept named DID",
+  "plural": "DID",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true,
+    "composer": {
+      "type": "concept",
+      "namespace": "org.example.commercialpaper",
+      "name": "DID",
+      "fqn": "org.example.commercialpaper.DID",
+      "abstract": false
+    }
+  },
+  "properties": {
+    "$class": {
+      "type": "string",
+      "default": "org.example.commercialpaper.DID",
+      "required": false,
+      "description": "The class identifier for this type"
+    },
+    "scheme": {
+      "type": "string",
+      "default": "did",
+      "required": true
+    },
+    "method": {
+      "type": "string",
+      "default": "sov",
+      "required": true
+    },
+    "identifier": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

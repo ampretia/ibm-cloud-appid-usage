@@ -1,0 +1,30 @@
+export COMPOSER_CARD=admin@commercial-paper-network
+export COMPOSER_NAMESPACES=never
+export COMPOSER_AUTHENTICATION=true
+export COMPOSER_MULTIUSER=true
+export COMPOSER_PROVIDERS='{
+    "appid": {
+        "provider": "ibmcloud-appid",
+        "strategy":"WebAppStrategy",
+        "module": "ibmcloud-appid",
+        "clientId": "be63353f-189f-4aac-8835-f16e8871c415",   
+        "clientID": "be63353f-189f-4aac-8835-f16e8871c415",   
+        "oauthServerUrl": "https://appid-oauth.eu-gb.bluemix.net/oauth/v3/bf6e32f7-a928-4d09-81ad-3237dfd6d2e3",
+        "profilesUrl": "https://appid-profiles.eu-gb.bluemix.net",
+        "secret": "YjFjZTkyYzYtYjkwMi00Y2MzLTk4ZWYtYWYxYWVkYjcyNDA4",
+        "tenantId": "bf6e32f7-a928-4d09-81ad-3237dfd6d2e3",
+        "authPath": "/auth/fred",
+        "callbackURL": "/auth/appid/callback",
+        "redirectUri": "http://localhost:3000/auth/appid/callback",
+        "successRedirect": "/",
+        "failureRedirect": "/"
+    }
+}'
+export COMPOSER_DATASOURCES='{
+    "db": {
+        "name": "db",
+        "connector": "mongodb",
+        "host": "mongo"
+    }
+}'
+

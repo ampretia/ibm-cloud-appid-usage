@@ -1,0 +1,10 @@
+applications:
+- buildpack: sdk-for-nodejs
+  host: AppIdAMI-node-bf6e32f7-a928-4d09-81ad-3237dfd6d2e3
+  name: AppIdAMI-node-bf6e32f7-a928-4d09-81ad-3237dfd6d2e3
+  instances: 1
+  memory: 256M
+  disk_quota: 1024M
+  timeout: 180
+  services:
+  - AppId-AMI-alias

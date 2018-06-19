@@ -1,0 +1,67 @@
+{
+  "name": "Account",
+  "description": "An asset named Account",
+  "plural": "Account",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true,
+    "composer": {
+      "type": "asset",
+      "namespace": "org.example.commercialpaper",
+      "name": "Account",
+      "fqn": "org.example.commercialpaper.Account",
+      "abstract": false
+    }
+  },
+  "properties": {
+    "$class": {
+      "type": "string",
+      "default": "org.example.commercialpaper.Account",
+      "required": false,
+      "description": "The class identifier for this type"
+    },
+    "ID": {
+      "type": "string",
+      "id": true,
+      "description": "The instance identifier for this type",
+      "required": true
+    },
+    "summary": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "workingCurrency": {
+      "type": "string",
+      "enum": [
+        "EURO",
+        "STERLING",
+        "USD",
+        "YEN",
+        "CHF",
+        "CAD"
+      ],
+      "default": "USD",
+      "required": true
+    },
+    "cashBalance": {
+      "type": "number",
+      "required": true
+    },
+    "assets": {
+      "type": [
+        "any"
+      ],
+      "description": "The identifier of an instance of assets",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

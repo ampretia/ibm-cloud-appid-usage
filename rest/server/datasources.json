@@ -1,0 +1,8 @@
+{
+  "composer": {
+    "name": "composer",
+    "connector": "loopback-connector-composer",
+    "card": "admin@commercial-paper-network",
+    "namespaces": false
+  }
+}
